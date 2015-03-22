@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!--http://henriksjokvist.net/archive/2009/10/serving-the-same-h264-video-file-to-everyone-from-internet-explorer-to-iphone-->
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <title>HTML5 &lt;video&gt; Example</title>
+
+        <script type="text/javascript" src="swfobject.js"></script>
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript">
+          $(document).ready(function() {
+            var v = document.createElement("video"); 
+            
+if(navigator.userAgent.match(/iPad/i) == null){
+
+            if ( !v.play || $.browser.mozilla || $.browser.opera) { 
+
+              var params = {
+                allowfullscreen: "true",
+                allowscriptaccess: "always"
+              };
+              var flashvars = {
+                myFlashVar: "azzaro.mp4"
+              };
+              swfobject.embedSWF("myVideotestFlashVar.swf", "demo-video-flash", "320", "240", "9.0.0", "expressInstall.swf", flashvars, params);
+ 
+            }
+            
+            }//endIpad
+          });
+        </script>
+
+    </head>
+    <body>
+        <div id="content">
+          <div id="demo-video-flash">
+             <video id="demo-video" poster="mj_moscow.jpg" controls>
+              <source src="azzaro.mp4" type="video/mp4" /> <!-- MPEG4 for Safari -->
+              </video>
+          </div>
+        </div>
+    </body>
+</html>

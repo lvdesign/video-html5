@@ -6,7 +6,7 @@ base exemple video
 video-source
 ============
 
-one video file for all plateform. 
+one video file for all plateforms. 
 
 Une source/fichier vidéo + javascript = vidéo multiplateforme !
 
@@ -18,4 +18,4 @@ Je prendrais le format vidéo .mp4 ou h264 car il est compatible avec les iPhone
 Pour que cette vidéo soit visible sur d'autres supports, je mets en place une solution alternative avec javascript pour lire la vidéo avec un player en Flash.
 Ce player est personnalisé Mais je donne la base en .fla cs3 sur mon site lvdesign.com.fr/blog/newsdetails.php?article_id=40. 
 
-Donc, plus besoin de chercher un player .swf lié à un commerçant. Vous pouvez tres facilement le redessiner selon votre gout, je n'ai etablit que la structure de base.
+Donc, plus besoin de chercher un player .swf lié à un commerçant. Vous pouvez tres facilement le redessiner selon votre gout, je n'ai etablis que la structure de base.
